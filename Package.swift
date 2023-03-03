@@ -29,8 +29,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreModule_SD_Scanner",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Scanner-1.0.0-beta+20230302113401.xcframework.zip",
-			checksum: "cd709fbe98ace0149bffceb3f035cbda33722da186bceda3f97ab5712f0086dd"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Scanner-1.0.0-beta+20230303092649.xcframework.zip",
+			checksum: "bc9a691ac2a5c1d16734b108ed647c1527c35ba96fba13f9571d328cb67d88b8"
 		)
 	]
 )
