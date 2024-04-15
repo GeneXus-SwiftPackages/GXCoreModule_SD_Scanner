@@ -1,28 +1,28 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 5.7
 import PackageDescription
 
 let package = Package(
 	name: "GXCoreModule_SD_Scanner",
-	platforms: [.iOS("12.0"), .visionOS("1.0")],
+	platforms: [.iOS("12.0")],
 	products: [
 		.library(
 			name: "GXCoreModule_SD_Scanner",
 			targets: ["GXCoreModule_SD_ScannerWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.6.0-beta.3")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.6.0-beta.4")
 	],
 	targets: [
 		.target(name: "GXCoreModule_SD_ScannerWrapper",
 				dependencies: [
 					"GXCoreModule_SD_Scanner",
-					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS, .visionOS]))
+					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreModule_SD_Scanner",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Scanner-1.6.0-beta.3.xcframework.zip",
-			checksum: "1a6499af3045ed1c16f90006ce235feb69ea0e93e87001270a5de8d238c165a9"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Scanner-1.6.0-beta.4.xcframework.zip",
+			checksum: "ed5563b772942b88adc5afbee2337a611e9242075bfc8869e68059b44bae7dea"
 		)
 	]
 )
