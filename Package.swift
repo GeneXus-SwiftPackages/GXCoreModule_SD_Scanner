@@ -3,14 +3,14 @@ import PackageDescription
 
 let package = Package(
 	name: "GXCoreModule_SD_Scanner",
-	platforms: [.iOS("13.0"), .visionOS("1.0")],
+	platforms: [.iOS("15.0"), .visionOS("2.0")],
 	products: [
 		.library(
 			name: "GXCoreModule_SD_Scanner",
 			targets: ["GXCoreModule_SD_ScannerWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "3.0.0-beta.8")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "3.0.0-beta.9")
 	],
 	targets: [
 		.target(name: "GXCoreModule_SD_ScannerWrapper",
@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreModule_SD_Scanner",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Scanner-3.0.0-beta.8.xcframework.zip",
-			checksum: "688cea88be828fa3f58dfba6ab9d979a8b02d18a2f0b9b945bf4fbc7c005c945"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Scanner-3.0.0-beta.9.xcframework.zip",
+			checksum: "d4b29cce7851cf04d51a5bca5159ee6765b2c86fdf5c06d389c94cb90b6d7020"
 		)
 	]
 )
