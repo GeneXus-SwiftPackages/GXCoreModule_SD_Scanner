@@ -10,7 +10,7 @@ let package = Package(
 			targets: ["GXCoreModule_SD_ScannerWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "4.0.0")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "4.0.2")
 	],
 	targets: [
 		.target(name: "GXCoreModule_SD_ScannerWrapper",
@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreModule_SD_Scanner",
-			url: "https://pkgs.genexus.dev/iOS/releases/GXCoreModule_SD_Scanner-4.0.0.xcframework.zip",
-			checksum: "49b74ec053b0e34c5c64f974d02aca0487737f79d90262a47f36e5e2ce86a994"
+			url: "https://pkgs.genexus.dev/iOS/releases/GXCoreModule_SD_Scanner-4.0.2.xcframework.zip",
+			checksum: "6bcbf3b273e7ed8bd1aabb2f858009bd25fc4a8b0e63b10237f97f9187f6dbca"
 		)
 	]
 )
